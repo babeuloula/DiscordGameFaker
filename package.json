@@ -1,0 +1,18 @@
+{
+  "main": "app/index.html",
+  "name": "Discord Game Faker",
+  "description": "",
+  "version": "1.0",
+  "window": {
+    "title": "Discord Game Faker",
+    "icon": "icons/app.png",
+    "toolbar": true,
+    "frame": true,
+    "width": 400,
+    "height": 100,
+    "min_width": 400,
+    "min_height": 100,
+    "max_width": 400,
+    "max_height": 100
+  }
+}

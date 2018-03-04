@@ -1,0 +1,9 @@
+.idea/
+locales/
+swiftshader/
+credits.html
+*.dll
+*.dat
+*.bin
+*.pak
+*.exe

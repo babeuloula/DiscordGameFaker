@@ -1,0 +1,48 @@
+<!doctype html>
+
+<html lang="fr">
+
+    <head>
+
+        <link title="defaut" type="text/css" rel="stylesheet" href="css/lib/bootstrap/bootstrap.min.css" media="screen">
+
+    </head>
+
+    <body>
+
+        <div class="col-sm-12 text-center">
+            <h3>Discord Game Faker</h3>
+
+            <p>You can now change the game name in Discord.</p>
+        </div>
+
+        <script type="text/javascript">
+            // Load library
+            var gui = require('nw.gui');
+
+            // Reference to window and tray
+            var win = gui.Window.get();
+            var tray;
+
+            // Get the minimize event
+            win.on('minimize', function() {
+                // Hide window
+                this.hide();
+
+                // Show tray
+                tray = new gui.Tray({
+                    icon: 'icons/app.png'
+                });
+
+                // Show window and remove tray when clicked
+                tray.on('click', function() {
+                    win.show();
+                    this.remove();
+                    tray = null;
+                });
+            });
+        </script>
+
+    </body>
+
+</html>
